@@ -181,7 +181,7 @@ function start() {
 function endGame(x) {
   console.log('--------------f>ENDGAME: '+x+'-----------');
   gamestate=0;
-  ROCKS.forEach(function(element){element.remove()});
+  //ROCKS.forEach(function(element){element.remove()});
   clearInterval(gameInterval);
   document.querySelectorAll('.rock').forEach(function(x){x.remove()});
   window.removeEventListener('keydown', moveDodger);
